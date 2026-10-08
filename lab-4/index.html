@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste și metode Array</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Liste și metode Array</h1>
+
+    <section class="sectiune">
+        <h2>Lista de cumpărături</h2>
+        <input type="text" id="input-produs" placeholder="Introdu produsul">
+        <button id="btn-adauga-sfarsit">Adaugă la sfârșit</button>
+        <button id="btn-adauga-inceput">Adaugă la început</button>
+        <button id="btn-sterge-primul">Șterge primul</button>
+        <button id="btn-sterge-ultimul">Șterge ultimul</button>
+        <p id="lista-produse"></p>
+    </section>
+
+    <section class="sectiune">
+        <h2>Catalog electronic</h2>
+
+        <p>Număr de elevi: <span id="numar-elevi">0</span></p>
+
+        <h3>Adaugă elev</h3>
+        <input type="text" id="input-nume" placeholder="Nume">
+        <input type="number" id="input-varsta" placeholder="Vârsta">
+        <input type="number" id="input-nota" placeholder="Nota">
+        <button id="btn-adauga-elev">Adaugă elev</button>
+
+        <h3>Șterge elev</h3>
+        <input type="text" id="input-sterge" placeholder="Numele elevului">
+        <button id="btn-sterge-elev">Șterge elev</button>
+
+        <h3>Caută elev</h3>
+        <input type="text" id="input-cauta" placeholder="Caută elev">
+        <button id="btn-cauta-elev">Caută</button>
+        <p id="rezultat-cautare"></p>
+
+        <div id="catalog"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

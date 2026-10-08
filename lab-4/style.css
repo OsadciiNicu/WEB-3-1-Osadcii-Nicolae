@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #111;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.sectiune {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+
+button {
+    padding: 8px 16px;
+    border: 1px solid #111;
+    background-color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+
+button:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+#lista-produse {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.elev {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+}
+
+#numar-elevi {
+    font-weight: bold;
+}
+
+#rezultat-cautare {
+    font-weight: bold;
+}
