@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestiunea Studenților - Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container-principal">
+        
+        <div class="controls">
+            <h2>Control Flexbox</h2>
+            <label>Justify-content: 
+                <select id="select-justify" onchange="aplicaFlexbox()">
+                    <option value="flex-start">flex-start</option>
+                    <option value="center">center</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-evenly">space-evenly</option>
+                </select>
+            </label>
+            <label>Align-items: 
+                <select id="select-align" onchange="aplicaFlexbox()">
+                    <option value="stretch">stretch</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="center">center</option>
+                    <option value="flex-end">flex-end</option>
+                </select>
+            </label>
+            <label>Flex-wrap: 
+                <select id="select-wrap" onchange="aplicaFlexbox()">
+                    <option value="wrap">wrap</option>
+                    <option value="nowrap">nowrap</option>
+                </select>
+            </label>
+            <label>Gap (px): 
+                <input type="number" id="input-gap" value="20" oninput="aplicaFlexbox()" min="0">
+            </label>
+        </div>
+
+        <h2>Adaugă student nou</h2>
+        <div class="formular">
+            <input type="text" id="input-nume" placeholder="Nume și Prenume">
+            <input type="text" id="input-grupa" placeholder="Grupa (ex: SI-231)">
+            <input type="number" id="input-varsta" placeholder="Vârsta (14-100)">
+            <input type="text" id="input-specialitate" placeholder="Specialitatea">
+            <button onclick="adaugaStudent()">Adaugă Student</button>
+        </div>
+
+        <p id="numar-studenti">Număr de studenți: 0</p>
+        
+        <div id="mesaj-gol" style="display: none;">Lista este goală! Adăugați un student.</div>
+
+        <div id="container-studenti" class="flex-container">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
